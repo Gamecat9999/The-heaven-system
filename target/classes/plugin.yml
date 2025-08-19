@@ -1,0 +1,52 @@
+name: HeavenSystem
+version: '1.0.0'
+main: com.heavensystem.HeavenSystemPlugin
+api-version: '1.20'
+author: HeavenSystem
+description: A mythic progression framework for Minecraft
+website: https://github.com/heavensystem/heaven-system
+
+commands:
+  heaven:
+    description: Main Heaven System command
+    usage: /<command> [subcommand]
+    permission: heavensystem.use
+  stats:
+    description: View player stats
+    usage: /<command> [player]
+    permission: heavensystem.stats
+  titles:
+    description: View player titles
+    usage: /<command> [player]
+    permission: heavensystem.titles
+  ascend:
+    description: Admin command for ascension management
+    usage: /<command> <player> <role>
+    permission: heavensystem.admin
+
+permissions:
+  heavensystem.*:
+    description: All Heaven System permissions
+    children:
+      heavensystem.use: true
+      heavensystem.stats: true
+      heavensystem.titles: true
+      heavensystem.admin: true
+  heavensystem.use:
+    description: Use basic Heaven System features
+    default: true
+  heavensystem.stats:
+    description: View stats
+    default: true
+  heavensystem.titles:
+    description: View titles
+    default: true
+  heavensystem.admin:
+    description: Admin commands
+    default: op
+  heavensystem.mediator:
+    description: System Mediator permissions
+    default: false
+  heavensystem.architect:
+    description: System Architect permissions
+    default: false

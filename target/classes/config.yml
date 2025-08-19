@@ -1,0 +1,62 @@
+# Heaven System Configuration
+# A mythic progression framework for Minecraft
+
+system:
+  # How long players must wait between stat gains from the same source (milliseconds)
+  stat-gain-cooldown: 5000
+  
+  # How often to auto-save player data (milliseconds) 
+  auto-save-interval: 300000
+  
+  # System events configuration
+  events:
+    enabled: true
+    frequency: 60000  # Check for events every minute
+    
+# Ascension requirements
+ascension:
+  mediator:
+    potential-required: 250.0
+  architect:
+    potential-required: 1000.0
+
+# Stat system configuration
+stats:
+  strength:
+    combat-multiplier: 0.01      # 1% damage increase per point
+    mining-multiplier: 0.005     # 0.5% mining speed per point
+    
+  agility:
+    movement-multiplier: 0.005   # 0.5% movement speed per point
+    dodge-chance: 0.002          # 0.2% dodge chance per point
+    
+  intelligence:
+    exp-multiplier: 0.01         # 1% experience bonus per point
+    crafting-multiplier: 0.005   # 0.5% crafting speed per point
+    
+  charisma:
+    trade-multiplier: 0.02       # 2% better trade deals per point
+    reputation-multiplier: 0.01  # 1% reputation gain per point
+
+# Title system settings
+titles:
+  show-particles: true
+  show-prefix: true
+  show-suffix: true
+  
+# Class system settings
+classes:
+  allow-multiclass: false
+  class-change-cost: 100.0  # Potential cost to change class
+
+# GUI settings
+gui:
+  update-interval: 20  # Ticks between GUI updates
+  animated-titles: true
+
+# Messages
+messages:
+  prefix: "§8[§6Heaven System§8]"
+  stat-gain: "%prefix% §7+%amount% %stat% §7(%reason%)"
+  title-unlock: "%prefix% §6Title Unlocked: %title%"
+  ascension-eligible: "%prefix% §dYou are eligible for ascension!"

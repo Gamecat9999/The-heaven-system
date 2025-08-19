@@ -1,0 +1,257 @@
+# Heaven System Titles Configuration
+# Define custom titles, their requirements, and rewards
+
+titles:
+  # Combat Titles
+  beast_slayer_1:
+    name: "Beast Slayer"
+    description: "Slay 100 hostile mobs"
+    tier: 1
+    color: "DARK_RED"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      STRENGTH: 10
+    potential-grant: 8.0
+    particle-effect: false
+    requirements:
+      mob-kills: 100
+      
+  apex_predator_1:
+    name: "Apex Predator"
+    description: "Slay 500 hostile mobs"
+    tier: 2
+    color: "DARK_RED"
+    prefix: "⚔"
+    suffix: "⚔"
+    stat-bonuses:
+      STRENGTH: 20
+      AGILITY: 10
+    potential-grant: 20.0
+    particle-effect: true
+    requirements:
+      mob-kills: 500
+
+  # Building Titles
+  master_builder_1:
+    name: "Master Builder"
+    description: "Place 10,000 blocks"
+    tier: 1
+    color: "AQUA"
+    prefix: "🏗"
+    suffix: ""
+    stat-bonuses:
+      INTELLIGENCE: 15
+    potential-grant: 10.0
+    particle-effect: false
+    requirements:
+      blocks-placed: 10000
+      
+  architect_1:
+    name: "Architect"
+    description: "Place 50,000 blocks"
+    tier: 2
+    color: "DARK_AQUA"
+    prefix: "⛏"
+    suffix: "⛏"
+    stat-bonuses:
+      INTELLIGENCE: 30
+      CHARISMA: 15
+    potential-grant: 25.0
+    particle-effect: true
+    requirements:
+      blocks-placed: 50000
+
+  # Mining Titles
+  diamond_seeker_1:
+    name: "Diamond Seeker"
+    description: "Mine 100 diamond ore"
+    tier: 1
+    color: "BLUE"
+    prefix: "💎"
+    suffix: ""
+    stat-bonuses:
+      INTELLIGENCE: 12
+      STRENGTH: 8
+    potential-grant: 12.0
+    particle-effect: false
+    requirements:
+      diamond-mined: 100
+
+  emerald_hunter_1:
+    name: "Emerald Hunter"
+    description: "Mine 50 emerald ore"
+    tier: 1
+    color: "GREEN"
+    prefix: "💚"
+    suffix: ""
+    stat-bonuses:
+      CHARISMA: 15
+      INTELLIGENCE: 10
+    potential-grant: 15.0
+    particle-effect: false
+    requirements:
+      emerald-mined: 50
+
+  netherite_forger_1:
+    name: "Netherite Forger"
+    description: "Mine 10 ancient debris"
+    tier: 2
+    color: "GOLD"
+    prefix: "🔥"
+    suffix: "🔥"
+    stat-bonuses:
+      STRENGTH: 25
+      AGILITY: 15
+    potential-grant: 30.0
+    particle-effect: true
+    requirements:
+      netherite-mined: 10
+
+  # Stat Specialization Titles
+  strength_specialist_1:
+    name: "Warrior"
+    description: "Achieve 50 Strength"
+    tier: 1
+    color: "RED"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      STRENGTH: 5
+    potential-grant: 2.5
+    particle-effect: false
+    requirements:
+      strength-stat: 50
+
+  strength_specialist_2:
+    name: "Berserker"
+    description: "Achieve 100 Strength"
+    tier: 2
+    color: "DARK_RED"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      STRENGTH: 10
+    potential-grant: 5.0
+    particle-effect: true
+    requirements:
+      strength-stat: 100
+
+  agility_specialist_1:
+    name: "Scout"
+    description: "Achieve 50 Agility"
+    tier: 1
+    color: "GREEN"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      AGILITY: 5
+    potential-grant: 2.5
+    particle-effect: false
+    requirements:
+      agility-stat: 50
+
+  agility_specialist_2:
+    name: "Shadow"
+    description: "Achieve 100 Agility"
+    tier: 2
+    color: "DARK_GREEN"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      AGILITY: 10
+    potential-grant: 5.0
+    particle-effect: true
+    requirements:
+      agility-stat: 100
+
+  intelligence_specialist_1:
+    name: "Scholar"
+    description: "Achieve 50 Intelligence"
+    tier: 1
+    color: "BLUE"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      INTELLIGENCE: 5
+    potential-grant: 2.5
+    particle-effect: false
+    requirements:
+      intelligence-stat: 50
+
+  intelligence_specialist_2:
+    name: "Sage"
+    description: "Achieve 100 Intelligence"
+    tier: 2
+    color: "DARK_BLUE"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      INTELLIGENCE: 10
+    potential-grant: 5.0
+    particle-effect: true
+    requirements:
+      intelligence-stat: 100
+
+  charisma_specialist_1:
+    name: "Diplomat"
+    description: "Achieve 50 Charisma"
+    tier: 1
+    color: "LIGHT_PURPLE"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      CHARISMA: 5
+    potential-grant: 2.5
+    particle-effect: false
+    requirements:
+      charisma-stat: 50
+
+  charisma_specialist_2:
+    name: "Leader"
+    description: "Achieve 100 Charisma"
+    tier: 2
+    color: "DARK_PURPLE"
+    prefix: ""
+    suffix: ""
+    stat-bonuses:
+      CHARISMA: 10
+    potential-grant: 5.0
+    particle-effect: true
+    requirements:
+      charisma-stat: 100
+
+  # General Progression Titles
+  stat_master_1:
+    name: "Apprentice"
+    description: "Achieve 100 total stats"
+    tier: 1
+    color: "YELLOW"
+    prefix: "["
+    suffix: "]"
+    stat-bonuses:
+      STRENGTH: 2
+      AGILITY: 2
+      INTELLIGENCE: 2
+      CHARISMA: 2
+    potential-grant: 5.0
+    particle-effect: false
+    requirements:
+      total-stats: 100
+
+  stat_master_2:
+    name: "Master"
+    description: "Achieve 500 total stats"
+    tier: 2
+    color: "GOLD"
+    prefix: "≪"
+    suffix: "≫"
+    stat-bonuses:
+      STRENGTH: 5
+      AGILITY: 5
+      INTELLIGENCE: 5
+      CHARISMA: 5
+    potential-grant: 15.0
+    particle-effect: true
+    requirements:
+      total-stats: 500

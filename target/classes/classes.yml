@@ -1,0 +1,132 @@
+# Heaven System Classes Configuration
+# Define player classes, their abilities, and progression paths
+
+classes:
+  duelist:
+    name: "Duelist"
+    description: "Master of blade and bow, excelling in combat prowess"
+    color: "RED"
+    icon: "IRON_SWORD"
+    stat-preferences:
+      STRENGTH: 3
+      AGILITY: 2
+    abilities:
+      - "combat_mastery"
+      - "weapon_expertise"
+      - "battle_rage"
+    class-data:
+      combat-bonus: 0.15
+      weapon-durability-bonus: 0.20
+
+  arcanist:
+    name: "Arcanist"
+    description: "Wielder of mystical forces and ancient knowledge"
+    color: "BLUE"
+    icon: "ENCHANTED_BOOK"
+    stat-preferences:
+      INTELLIGENCE: 3
+      CHARISMA: 2
+    abilities:
+      - "spell_casting"
+      - "mana_mastery"
+      - "arcane_shield"
+    class-data:
+      mana-bonus: 50
+      spell-power: 0.25
+      enchanting-bonus: 0.30
+
+  artisan:
+    name: "Artisan"  
+    description: "Master craftsman and builder of wondrous creations"
+    color: "YELLOW"
+    icon: "CRAFTING_TABLE"
+    stat-preferences:
+      INTELLIGENCE: 2
+      CHARISMA: 3
+    abilities:
+      - "master_crafting"
+      - "resource_efficiency"
+      - "blueprint_mastery"
+    class-data:
+      crafting-speed: 0.40
+      resource-efficiency: 0.25
+      durability-bonus: 0.30
+
+  trickster:
+    name: "Trickster"
+    description: "Swift and cunning, master of stealth and deception"
+    color: "GREEN"
+    icon: "ENDER_PEARL"
+    stat-preferences:
+      AGILITY: 3
+      INTELLIGENCE: 2
+    abilities:
+      - "stealth_mastery"
+      - "trap_setting"
+      - "quick_escape"
+    class-data:
+      stealth-duration: 300
+      movement-bonus: 0.35
+      dodge-chance: 0.20
+
+# Class Abilities Definitions
+abilities:
+  combat_mastery:
+    name: "Combat Mastery"
+    description: "15% increased damage with all weapons"
+    type: "PASSIVE"
+    
+  weapon_expertise:
+    name: "Weapon Expertise" 
+    description: "20% slower weapon durability loss"
+    type: "PASSIVE"
+    
+  battle_rage:
+    name: "Battle Rage"
+    description: "Gain strength when health is low"
+    type: "CONDITIONAL"
+    
+  spell_casting:
+    name: "Spell Casting"
+    description: "Access to magical abilities"
+    type: "ACTIVE"
+    
+  mana_mastery:
+    name: "Mana Mastery"
+    description: "50 bonus mana points"
+    type: "PASSIVE"
+    
+  arcane_shield:
+    name: "Arcane Shield" 
+    description: "Magical protection against damage"
+    type: "ACTIVE"
+    
+  master_crafting:
+    name: "Master Crafting"
+    description: "40% faster crafting speed"
+    type: "PASSIVE"
+    
+  resource_efficiency:
+    name: "Resource Efficiency"
+    description: "25% chance to save materials when crafting"
+    type: "PASSIVE"
+    
+  blueprint_mastery:
+    name: "Blueprint Mastery"
+    description: "Craft items with 30% more durability"
+    type: "PASSIVE"
+    
+  stealth_mastery:
+    name: "Stealth Mastery"
+    description: "5 minute invisibility cooldown ability"
+    type: "ACTIVE"
+    
+  trap_setting:
+    name: "Trap Setting"
+    description: "Place hidden traps and snares"
+    type: "ACTIVE"
+    
+  quick_escape:
+    name: "Quick Escape"
+    description: "35% movement speed bonus, 20% dodge chance"
+    type: "PASSIVE"
